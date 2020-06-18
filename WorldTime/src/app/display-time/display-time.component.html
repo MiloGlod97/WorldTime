@@ -1,0 +1,11 @@
+<div class="container mt-4" *ngIf="timeZoneData != undefined && currentTime != undefined" >
+    <div class="row text-center">
+        <div class="col">
+            <h2>Time Zone</h2>
+            <div>{{ timeZoneData.timeZone }}</div> 
+            <h2>Current Time</h2>
+            <div>{{ currentTime | date: "dd-MM-yyyy" }}</div>
+            <div>{{ currentTime | date:"HH:mm:ss" }}</div>
+        </div>
+      </div>
+</div>
